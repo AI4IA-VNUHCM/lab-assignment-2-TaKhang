@@ -16,6 +16,22 @@ int main(int argc, char *argv[]) {
 	
 	//Your codes here
 	
+	void primefactors(int num)
+{
+	int count;
+	for(count=2;num>1;count++)
+	{
+		while (num%count==0)
+		{
+			num=num/count;
+			printf("%d ",count);
+			if (num==1){
+			break;}
+			printf(" * ");
+		}
+	}
+}
 	
+	primefactors(testcase);
 	return 0;
 }
