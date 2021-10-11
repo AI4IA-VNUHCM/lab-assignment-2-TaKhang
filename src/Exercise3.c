@@ -10,13 +10,7 @@ ______________________________________
 #include <stdlib.h>
 #include <math.h>
 
-int main(int argc, char *argv[]) {
-	//testing variable, applying it to your algorithm for auto-evaluating
-	int testcase = atoi(argv[1]);
-	
-	//Your codes here
-	
-	void primefactors(int num)
+void primefactors(int num)
 {
 	int count;
 	for(count=2;num>1;count++)
@@ -31,7 +25,11 @@ int main(int argc, char *argv[]) {
 		}
 	}
 }
-	
+
+int main(int argc, char *argv[])
+ {
+	//testing variable, applying it to your algorithm for auto-evaluating
+	int testcase = atoi(argv[1]);
 	primefactors(testcase);
 	return 0;
 }
