@@ -27,6 +27,6 @@ ______________________________________
    
 int main() 
 { 
-    printf("Double factorial is %d", doublefactorial(11)); 
+    printf("%d", doublefactorial(11)); 
     return 0; 
 } 
