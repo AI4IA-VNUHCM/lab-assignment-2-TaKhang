@@ -18,7 +18,7 @@ ______________________________________
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int n = atoi(argv[1]);
-	int result;
+	int result=1;
 	//Your codes here
 	
 	if (n > 0)
