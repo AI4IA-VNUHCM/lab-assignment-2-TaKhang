@@ -21,7 +21,7 @@ void primefactors(int num)
 		while (num%count==0)
 		{
 			num=num/count;
-			printf("%d ",count);
+			printf("%d",count);
 			if (num==1){
 			break;}
 			printf(" * ");
