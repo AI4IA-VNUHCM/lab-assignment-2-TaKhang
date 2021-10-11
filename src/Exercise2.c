@@ -15,18 +15,19 @@ ______________________________________
 #include <math.h>
 #include <stdbool.h>
 
-
+int main(int argc, char *argv[]) {
+	//testing variable, applying it to your algorithm for auto-evaluating
+	int n = atoi(argv[1]);
+	int result=1;
 	//Your codes here
 	
-	unsigned int doublefactorial(unsigned int n) 
-{ 
-    if (n == 0 || n==1) 
-      return 1; 
-    return n*doublefactorial(n-2); 
-} 
-   
-int main() 
-{ 
-    printf("%d", doublefactorial(11)); 
+if (n > 0){
+        int i = n % 2 == 0 ? 2 : 1;
+        while(i <= n){
+            result *= i;
+            i += 2;
+        }
+    }
+    printf("%d", result); 
     return 0; 
 } 
