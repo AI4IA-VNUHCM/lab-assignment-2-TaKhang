@@ -10,12 +10,26 @@ ______________________________________
 #include <stdlib.h>
 #include <math.h>
 
-int main(int argc, char *argv[]) {
+void primefactors(int num)
+{
+	int count;
+	for(count=2;num>1;count++)
+	{
+		while (num%count==0)
+		{
+			num=num/count;
+			printf("%d",count);
+			if (num==1){
+			break;}
+			printf(" * ");
+		}
+	}
+}
+
+int main(int argc, char *argv[])
+ {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase = atoi(argv[1]);
-	
-	//Your codes here
-	
-	
+	primefactors(testcase);
 	return 0;
 }
