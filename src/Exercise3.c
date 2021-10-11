@@ -10,6 +10,9 @@ ______________________________________
 #include <stdlib.h>
 #include <math.h>
 
+int main(int argc, char *argv[])
+	//testing variable, applying it to your algorithm for auto-evaluating
+	int testcase = atoi(argv[1]);
 void primefactors(int num)
 {
 	int count;
@@ -24,12 +27,6 @@ void primefactors(int num)
 			printf(" * ");
 		}
 	}
-}
-
-int main(int argc, char *argv[])
- {
-	//testing variable, applying it to your algorithm for auto-evaluating
-	int testcase = atoi(argv[1]);
 	primefactors(testcase);
 	return 0;
 }
