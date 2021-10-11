@@ -13,12 +13,23 @@ ______________________________________
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <stdbool.h>
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int n = atoi(argv[1]);
 	int result;
 	//Your codes here
+	
+	if (n > 0)
+	{
+        int i = n % 2 == 0 ? 2 : 1;
+        while(i <= n)
+		{
+            result *= i;
+            i += 2;
+        }
+    }
 	
 	printf("%d", result);
 	return 0;
